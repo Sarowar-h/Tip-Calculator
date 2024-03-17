@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output/output.css" />
+  </head>
+  <body class="bg-customLightgrayishcyan font-SpaceMono">
+    <main class="flex flex-col">
+      <img class="w-24 my-10 mx-auto" src="./images/logo.svg" alt="" />
+      <div class="bg-customWhite p-8 rounded-xl max-w-[280px] mx-auto">
+        <div id="inputs" class="">
+          <div>
+            <label class="font-bold text-customGrayishcyan" for="bill">
+              Bill
+            </label>
+            <br />
+            <div class="flex justify-between items-center">
+              <input
+                class="font-SpaceMono placeholder-customGrayishcyan text-customVerydarkcyan text-[24px] font-bold font- w-full relative h-10 text-right mt-2 mb-6 pr-2 rounded-md border-none bg-customVerylightgrayishcyan"
+                type="number"
+                placeholder=" 0"
+              />
+              <br />
+              <img
+                class="absolute w-3 pl-3 pb-4"
+                src="./images/icon-dollar.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="font-bold text-customGrayishcyan" for="bill">
+              Select tip % </label
+            ><br />
+            <div class="mt-2 mb-6 grid grid-cols-2 gap-2">
+              <button
+                class="py-2 font-SpaceMono font-bold text-[20px] px-5 border-none rounded-md bg-customVerydarkcyan text-customWhite hover:bg-customStrongcyan hover:text-customVerydarkcyan"
+              >
+                5%
+              </button>
+              <button
+                class="py-2 font-SpaceMono font-bold text-[20px] px-5 border-none rounded-md bg-customVerydarkcyan text-customWhite hover:bg-customStrongcyan hover:text-customVerydarkcyan"
+              >
+                10
+              </button>
+              <button
+                class="py-2 font-SpaceMono font-bold text-[20px] px-5 border-none rounded-md bg-customVerydarkcyan text-customWhite hover:bg-customStrongcyan hover:text-customVerydarkcyan"
+              >
+                15%
+              </button>
+              <button
+                class="py-2 font-SpaceMono font-bold text-[20px] px-5 border-none rounded-md bg-customVerydarkcyan text-customWhite hover:bg-customStrongcyan hover:text-customVerydarkcyan"
+              >
+                25%
+              </button>
+              <button
+                class="py-2 font-SpaceMono font-bold text-[20px] px-5 border-none rounded-md bg-customVerydarkcyan text-customWhite hover:bg-customStrongcyan hover:text-customVerydarkcyan"
+              >
+                50%
+              </button>
+              <input
+                class="font-bold text-[20px] font-SpaceMono text-center rounded-md border-none bg-customVerylightgrayishcyan text-customVerydarkcyan"
+                type="number"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-customGrayishcyan" for="bill">
+              Number of People
+            </label>
+            <br />
+            <div class="flex justify-between items-center">
+              <input
+                class="font-SpaceMono placeholder-customGrayishcyan text-customVerydarkcyan text-[24px] font-bold font- w-full relative h-10 text-right mt-2 mb-6 pr-2 rounded-md border-none bg-customVerylightgrayishcyan"
+                type="number"
+                placeholder=" 0"
+                min="0"
+              />
+              <br />
+              <img
+                class="absolute w-3 pl-3 pb-4"
+                src="./images/icon-person.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-customVerydarkcyan rounded-lg" id="result">
+          <div class="flex justify-between items-center">
+            <p class="font-bold text-base text-customWhite">
+              Tip Amount
+              <br />
+              <span class="text-xs text-customGrayishcyan">/</span>
+              <span class="text-xs text-customGrayishcyan">Person</span>
+            </p>
+
+            <p class="font-bold text-[26px] text-customStrongcyan">
+              <span class="text-xl">$</span>0.00
+            </p>
+          </div>
+          <div class="flex justify-between items-center">
+            <p class="font-bold text-base text-customWhite">
+              Total
+              <br />
+              <span class="text-xs text-customGrayishcyan">/</span>
+              <span class="text-xs text-customGrayishcyan">Person</span>
+            </p>
+
+            <p class="font-bold text-[26px] text-customStrongcyan">
+              <span class="text-xl">$</span>0.00
+            </p>
+          </div>
+          <div>
+            <button
+              class="w-full font-SpaceMono h-10 font-semibold text-xl bg-customStrongcyan border-none rounded-md text-customVerydarkcyan"
+            >
+              RESET
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
